@@ -11,6 +11,8 @@ import android.widget.EditText;
 import com.carvalho.imcjavaapp.R;
 import com.carvalho.imcjavaapp.model.imcRecord;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText inputHeight;
@@ -54,8 +56,10 @@ public class MainActivity extends AppCompatActivity {
             infoImc = "Obesidade Grau III";
         }
 
-        imcRecord imcRecord = new imcRecord(imc,infoImc);
+        DecimalFormat df = new DecimalFormat("#.00");
+        String imcFormated = df.format(imc);
 
+        imcRecord imcRecord = new imcRecord(imcFormated,infoImc);
         Intent navigateForm = new Intent(MainActivity.this, ImcDetailActivity.class);
         navigateForm.putExtra("imc",imcRecord);
         startActivity(navigateForm);
