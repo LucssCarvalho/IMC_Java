@@ -10,43 +10,43 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@mipmap/img_imc_foreground"
-        android:layout_margin="30dp" />
+        android:layout_margin="30dp"
+        android:src="@mipmap/img_imc_foreground" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:text="IMC - Índice de Massa Corporal"
-        android:textColor="@color/deepSkyBlue"
         android:textAlignment="center"
-        android:textSize="22dp"
-        android:gravity="center_horizontal" />
+        android:textColor="@color/deepSkyBlue"
+        android:textSize="22dp" />
 
     <EditText
         android:id="@+id/inputWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
+        android:layout_margin="15dp"
         android:hint="Peso (kg)"
-        android:textColorHint="@color/navy"
-      android:layout_margin="15dp"/>
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/navy" />
 
     <EditText
         android:id="@+id/inputHeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:textColorHint="@color/navy"
+        android:layout_margin="15dp"
         android:hint="Altura(cm)"
-     android:layout_margin="15dp"/>
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/navy" />
 
     <Button
         android:id="@+id/btnCalculate"
         android:layout_width="match_parent"
         android:layout_height="55dp"
+        android:layout_margin="15dp"
         android:text="Calcular IMC"
-        app:backgroundTint="@color/navy"
-        android:layout_margin="15dp"/>
+        app:backgroundTint="@color/navy" />
 
     <TextView
         android:id="@+id/textViewResult"
